@@ -9,7 +9,16 @@ class twoo extends StatelessWidget {
       appBar: AppBar(
         title: Text("Page twoo "),
       ),
-      body: Column(children: [Text("Page twoo ")]),
+      body: Column(children: [
+        Text("Page twoo "),
+        ElevatedButton(
+            onPressed: () {
+              if (Navigator.of(context).canPop()) {
+                Navigator.of(context).pop();
+              }
+            },
+            child: Text("Back")),
+      ]),
     );
   }
 }

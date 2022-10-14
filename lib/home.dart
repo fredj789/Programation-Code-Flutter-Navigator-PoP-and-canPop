@@ -29,7 +29,18 @@ class PageHome extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushNamed("three");
                 },
-                child: Text("Go to page three "))
+                child: Text("Go to page three ")),
+            ElevatedButton(
+                onPressed: () {
+                  if (Navigator.of(context).canPop()) {
+                    Navigator.of(context).pop();
+                  } else
+                    ;
+                  {
+                    print("Vos etes sur la page d acceuil de l 'application");
+                  }
+                },
+                child: Text("Back")),
           ],
         ),
       ),
