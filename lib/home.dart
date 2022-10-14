@@ -17,28 +17,19 @@ class PageHome extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    return one();
-                  }));
+                  Navigator.of(context).pushNamed("one");
                 },
                 child: Text("Go to paage one")),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    return twoo();
-                  }));
+                  Navigator.of(context).pushNamed("two");
                 },
-                child: Text("Go to page Two")),
+                child: Text("Go To page Twoo")),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    return three();
-                  }));
+                  Navigator.of(context).pushNamed("three");
                 },
-                child: Text("Go to page Three"))
+                child: Text("Go to page three "))
           ],
         ),
       ),
